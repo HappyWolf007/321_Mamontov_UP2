@@ -125,7 +125,8 @@ namespace UP2.Pages
                 {
                     MessageBox.Show(ex.Message.ToString());
                 }
-            }
+            NavigationService.GoBack();
+        }
     }
 
 }

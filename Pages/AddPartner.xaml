@@ -40,7 +40,7 @@
         <TextBox VerticalContentAlignment="Center" ToolTip="Впишите почту" Text="{Binding email}" x:Name="EmailTextBox" Margin="399,0,0,0" Grid.Row="5" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" Grid.ColumnSpan="2"/>
         <TextBox VerticalContentAlignment="Center" ToolTip="Впишите адрес" Text="{Binding legal_address}" x:Name="AddressTextBox" Margin="399,0,0,0" Grid.Row="6" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" Grid.ColumnSpan="2"/>
 
-        <Button BorderThickness="0" ToolTip="Кнопка для отмены действий" Content="Отмена" x:Name="BackButton" Grid.Row="8" Margin="92,0,0,0" Grid.Column="0" Click="BackButtonClick" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="219"></Button>
+        <Button BorderThickness="0" ToolTip="Кнопка для отмены действий/Возврат назад" Content="Отмена\Назад" x:Name="BackButton" Grid.Row="8" Margin="92,0,0,0" Grid.Column="0" Click="BackButtonClick" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="219"></Button>
 
         <Button ToolTip="Кнопка для сохранения" Content="Сохранить" x:Name="SaveButton" Grid.Row="8" Margin="79,0,0,0" Grid.Column="1"  Height="36" VerticalAlignment="Center" BorderThickness="0" HorizontalAlignment="Left" Width="219" Click="SaveButton_Click"/>
         <TextBox VerticalContentAlignment="Center" ToolTip="ИНН" Text="{Binding inn}" x:Name="innTextBox" Margin="399,0,0,0" Grid.Row="7" Height="36" VerticalAlignment="Center" HorizontalAlignment="Left" Width="160" Grid.ColumnSpan="2" />

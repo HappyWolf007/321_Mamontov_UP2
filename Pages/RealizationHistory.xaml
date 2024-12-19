@@ -14,7 +14,6 @@
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
 
-        <!-- ComboBox для выбора партнера -->
         <ComboBox x:Name="PartnerComboBox" Height="22" Margin="628,10,10,0" Grid.Row="0" VerticalAlignment="Top" SelectionChanged="PartnerComboBox_SelectionChanged">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
@@ -23,7 +22,6 @@
             </ComboBox.ItemTemplate>
         </ComboBox>
 
-        <!-- DataGrid для отображения истории -->
         <DataGrid x:Name="HistoryDataGrid" Margin="10,50,10,10" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Продукция" Width="*" Binding="{Binding ProductName}"/>
