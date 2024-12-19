@@ -17,7 +17,7 @@
         <Setter Property="Margin" Value="12"/>
         <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="FontSize" Value="12pt"/>
-        <Setter Property="Background" Value="#f4e8d2"/>
+        <Setter Property="Background" Value="#67BA80"/>
         <Setter Property="Foreground" Value="Black"/>
 
     </Style>
@@ -28,11 +28,14 @@
         <Setter Property="Margin" Value="12"/>
         <Setter Property="FontFamily" Value="Segoe UI"/>
         <Setter Property="FontSize" Value="12pt"/>
-        <Setter Property="Background" Value="#f4e8d2"/>
+        <Setter Property="Background" Value="#67BA80"/>
         <Setter Property="Foreground" Value="Black"/>
 
     </Style>
     <Style TargetType="TextBlock">
         <Setter Property="FontFamily" Value="Segoe UI"/>
+    </Style>
+    <Style TargetType="Window">
+        <Setter Property="Background" Value="#F4E8D3"></Setter>   
     </Style>
 </ResourceDictionary>
