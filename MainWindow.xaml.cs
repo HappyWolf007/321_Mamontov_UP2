@@ -40,7 +40,7 @@ namespace UP2
         {
 
             if (!(e.Content is Page page)) return;
-            this.Title = $"ProjectByKhitrinovich - {page.Title}";
+            this.Title = $"ProjectByMamontov - {page.Title}";
 
             if (page is Pages.Menu)
                 BackButton.Visibility = Visibility.Hidden;
