@@ -13,7 +13,7 @@
             <RowDefinition Height="24.04"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Source="Pages/Menu.xaml"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Navigated="MainFrame_Navigated" Height="334" Background="White"></Frame>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Source="Pages/Menu.xaml"  VerticalAlignment="Center" HorizontalAlignment="Center" Width="800" Navigated="MainFrame_Navigated" Height="382" Background="White"></Frame>
         <Button x:Name="BackButton" Grid.Row="0" Margin="20,14,0,9" Content="Назад" Click="BackButton_Click" HorizontalAlignment="Left" Width="79" BorderThickness="0"></Button>
 
     </Grid>

@@ -30,22 +30,10 @@ namespace UP2.Pages
 
         public void CalculateDiscount()
         {
-            if (TotalSales <= 10000)
-            {
-                Discount = 0;
-            }
-            else if (TotalSales <= 50000)
-            {
-                Discount = 5;
-            }
-            else if (TotalSales <= 300000)
-            {
-                Discount = 10;
-            }
-            else
-            {
-                Discount = 15;
-            }
+            if (TotalSales <= 10000) { Discount = 0;}
+            else if (TotalSales <= 50000){Discount = 5;}
+            else if (TotalSales <= 300000){Discount = 10;}
+            else{Discount = 15;}
         }
     }
 
@@ -73,7 +61,6 @@ namespace UP2.Pages
             var groupedByPartner = skidkiPachet.GroupBy(x => x.Partners);
             var partners = Entities.GetContext().Partners.ToList();
 
-            // Получаем данные о продажах партнера
             var partnerProducts = Entities.GetContext().Partner_product.ToList();
 
             var partnerSales = partnerProducts
@@ -87,7 +74,7 @@ namespace UP2.Pages
 
             var partnersWithDiscount = partners.Select(partner =>
             {
-                // Находим общие продажи для текущего партнера
+
                 var totalSales = partnerSales
                     .FirstOrDefault(ps => ps.PartnerId == partner.ID)?.TotalSales ?? 0;
 
@@ -135,7 +122,6 @@ namespace UP2.Pages
                 var groupedByPartner = skidkiPachet.GroupBy(x => x.Partners);
                 var partners = Entities.GetContext().Partners.ToList();
 
-                // Получаем данные о продажах партнера
                 var partnerProducts = Entities.GetContext().Partner_product.ToList();
 
                 var partnerSales = partnerProducts
@@ -149,7 +135,7 @@ namespace UP2.Pages
                 Entities.GetContext().ChangeTracker.Entries().ToList().ForEach(x => x.Reload());
                 var partnersWithDiscount = partners.Select(partner =>
                 {
-                    // Находим общие продажи для текущего партнера
+
                     var totalSales = partnerSales
                         .FirstOrDefault(ps => ps.PartnerId == partner.ID)?.TotalSales ?? 0;
 

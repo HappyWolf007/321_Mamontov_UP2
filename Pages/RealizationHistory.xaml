@@ -13,14 +13,14 @@
             <RowDefinition Height="377*"/>
             <RowDefinition Height="50*"/>
         </Grid.RowDefinitions>
-
-        <ComboBox x:Name="PartnerComboBox" Height="22" Margin="628,10,10,0" Grid.Row="0" VerticalAlignment="Top" SelectionChanged="PartnerComboBox_SelectionChanged">
+        <ComboBox x:Name="PartnerComboBox" Height="31" Margin="628,14,0,0" Grid.Row="0" VerticalAlignment="Top" SelectionChanged="PartnerComboBox_SelectionChanged" HorizontalAlignment="Left" Width="162" FontSize="12" >
             <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <TextBlock Text="{Binding company_name}"/>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
+
 
         <DataGrid x:Name="HistoryDataGrid" Margin="10,50,10,10" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
