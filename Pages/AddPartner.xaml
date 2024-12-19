@@ -27,7 +27,7 @@
 
         <TextBlock Text="Тип" Margin="348,0,0,0" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Width="27"/>
         <TextBlock Text="Наименование" Margin="292,0,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="89" Height="20" VerticalAlignment="Center"/>
-        <TextBlock Text="ФИО директор" Margin="317,0,0,0" Grid.Row="2" HorizontalAlignment="Left" Width="58" Height="24" VerticalAlignment="Center"/>
+        <TextBlock Text="ФИО директора" Margin="284,0,0,0" Grid.Row="2" HorizontalAlignment="Left" Width="91" Height="24" VerticalAlignment="Center"/>
         <TextBlock Text="Рейтинг" Margin="327,0,0,0" Grid.Row="3" RenderTransformOrigin="0.517,0.348" Height="22" VerticalAlignment="Center" HorizontalAlignment="Left" Width="48"/>
         <TextBlock Text="Контактный телефон" Margin="253,0,0,0" Grid.Row="4" HorizontalAlignment="Left" Width="122" Height="22" VerticalAlignment="Center"/>
         <TextBlock Text="Почта" Margin="335,18,0,0" Grid.Row="5" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="36"/>
