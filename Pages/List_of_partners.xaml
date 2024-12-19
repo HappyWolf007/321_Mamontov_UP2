@@ -14,6 +14,7 @@
             <RowDefinition Height="131*"/>
         </Grid.RowDefinitions>
 
+        <Button ToolTip="Нажмите, чтобы добавить партрнера" Content="Добавить партнера" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="619,0,0,0" Click="AddPartnerButton_Click" Height="38" Width="161"/>
 
         <ListView Name="ListUser" Grid.Row="1" SelectionChanged="ListUser_SelectionChanged_1" Margin="10,0,10,0" >
             <ListView.ItemTemplate>
@@ -48,7 +49,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button ToolTip="Кнопка для добавления партрнера" Content="Добавить партнера" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="619,0,0,0" Click="AddPartnerButton_Click" Height="38" Width="161"/>
-
+       
     </Grid>
 </Page>
