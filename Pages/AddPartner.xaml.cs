@@ -73,12 +73,7 @@ namespace UP2.Pages
             if (string.IsNullOrWhiteSpace(_currentPartner.email))
                 errors.AppendLine("Укажите почту!");
             if (string.IsNullOrWhiteSpace(_currentPartner.director_name))
-                errors.AppendLine("Укажите директора!");
-            if (!int.TryParse(_currentPartner.rating.ToString(), out int rating) || rating <= 0)
-            {
-                errors.AppendLine("Рейтинг должен быть положительным числом!");
-            }
-
+                errors.AppendLine("Укажите ФИО директора!");        
             if (string.IsNullOrWhiteSpace(_currentPartner.legal_address))
                 errors.AppendLine("Укажите адрес");
 
@@ -108,7 +103,7 @@ namespace UP2.Pages
 
                 if (!int.TryParse(RatingTextBox.Text, out int ratingValue) || ratingValue < 1 || ratingValue > 10)
                 {
-                    MessageBox.Show("Рейтинг должен быть числом от 1 до 10.", "Ошибка: Некорректный рейтинг", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Рейтинг должен быть числом от 1 до 10.", "Ошибка: Некорректный ввод", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
